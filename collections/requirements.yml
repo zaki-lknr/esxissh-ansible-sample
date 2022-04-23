@@ -1,0 +1,5 @@
+---
+collections:
+  - name: https://github.com/zaki-lknr/esxissh-ansible.git
+    version: main
+    type: git

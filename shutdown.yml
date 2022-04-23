@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  gather_facts: no
+
+  tasks:
+  - name: shutdown
+    zaki_lknr.esxissh.esxissh_guest_power:
+      esxiaddress: '{{ esxiaddr }}'
+      esxiusername: '{{ esxiuser }}'
+      esxipassword: '{{ esxipass }}'
+      vmname: '{{ vmname }}'
+      # state: poweron
+      state: shutdown
